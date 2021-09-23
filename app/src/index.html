@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MetaCoin | Truffle Webpack Demo w/ Frontend</title>
+    <title>Simple Storage Demo w/ Frontend</title>
   </head>
   <style>
     input {
@@ -10,23 +10,19 @@
     }
   </style>
   <body>
-    <h1>MetaCoin — Example Truffle Dapp</h1>
-    <p>You have <strong class="balance">loading...</strong> META</p>
+    <h1>Smart Contract with property</h1>
+    
 
-    <h1>Send MetaCoin</h1>
+    <h1>Update data</h1>
 
-    <label for="amount">Amount:</label>
-    <input type="text" id="amount" placeholder="e.g. 95" />
+    <label for="new-data">Data:</label>
+    <input type="text" id="new-data" placeholder="e.g. new data" />
 
-    <label for="receiver">To address:</label>
-    <input
-      type="text"
-      id="receiver"
-      placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
-    />
+    <button id="update-data">Update data</button>
 
-    <button onclick="App.sendCoin()">Send MetaCoin</button>
+    <hr>
 
+    <label for="status">Data content:</label>
     <p id="status"></p>
     <p>
       <strong>Hint:</strong> open the browser developer console to view any
